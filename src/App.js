@@ -1,36 +1,21 @@
-import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Header from "./Components/Header/Header";
+import Shop from "./Components/Shop/Shop";
+import { Routes, Route, Link } from "react-router-dom";
+import Orders from "./Components/Orders/Orders";
+import Inventory from "./Components/Inventory/Inventory";
 import About from "./Components/About/About";
-import Blogs from "./Components/Blogs/Blogs";
-import Dashboard from "./Components/Dashboard/Dashboard";
-import Home from "./Components/Home/Home";
-import Navbar from "./Components/Navbar/Navbar";
-import NotFound from "./Components/NotFound/NotFound";
-import Review from "./Components/Review/Review";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar></Navbar>
+    <div>
+      <Header></Header>
       <Routes>
-        <Route path="/" element={<Home></Home>}>
-          Home
-        </Route>
-        <Route path="/review" element={<Review></Review>}>
-          Review
-        </Route>
-        <Route path="/dashboard" element={<Dashboard></Dashboard>}>
-          Home
-        </Route>
-        <Route path="/blogs" element={<Blogs></Blogs>}>
-          Home
-        </Route>
-        <Route path="/about" element={<About></About>}>
-          Home
-        </Route>
-        <Route path="*" element={<NotFound></NotFound>}>
-          404
-        </Route>
+        <Route path="/" element={<Shop></Shop>}></Route>
+        <Route path="/shop" element={<Shop></Shop>}></Route>
+        <Route path="/orders" element={<Orders></Orders>}></Route>
+        <Route path="/inventory" element={<Inventory></Inventory>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
       </Routes>
     </div>
   );

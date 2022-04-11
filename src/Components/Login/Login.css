@@ -1,0 +1,95 @@
+.form-container {
+  width: 500px;
+  /* height: 600px; */
+  background: #ffffff;
+  border: 1px solid #95a0a7;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.form-title {
+  color: #2a414f;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+}
+.input-group {
+  margin-bottom: 25px;
+}
+.input-group label {
+  font-size: 17px;
+  display: block;
+  margin: 5px 5px;
+}
+.input-group input {
+  width: 415px;
+  height: 55px;
+  border: 1px solid #95a0a7;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 24px;
+  padding-left: 10px;
+}
+.form-submit {
+  background: rgba(255, 153, 0, 0.3);
+  border-radius: 5px;
+  width: 415px;
+  height: 55px;
+  border: none;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.form-container p {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.form-link {
+  color: rgba(247, 153, 11, 0.916);
+  text-decoration: none;
+  padding-left: 5px;
+}
+hr {
+  margin-top: 11px;
+  /* height: 0px; */
+  border: 1px solid #95a0a7;
+  width: 40%;
+}
+.hr {
+  color: #95a0a7;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.form-google-btn {
+  width: 415px;
+  height: 55px;
+  border: 1px solid #95a0a7;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.form-google-btn span {
+  font-size: 20px;
+  padding-left: 5px;
+  /* color: #95a0a7; */
+  font-family: "Lato";
+  font-style: normal;
+}
+.google-icon {
+  font-size: 32px;
+}
+.error {
+  color: rgba(255, 58, 58, 0.817);
+}

@@ -33,8 +33,8 @@ const Orders = () => {
             <button>Poceed Checkout</button>
           </Link> */}
           {/* pure button without showing any link in the buttom left corner of the page */}
-          <button onClick={() => navigate("/inventory")}>
-            Poceed Checkout
+          <button onClick={() => navigate("/shipment")}>
+            Proceed shipping
           </button>
         </Cart>
       </div>

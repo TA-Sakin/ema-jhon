@@ -1,6 +1,6 @@
 import { FcGoogle } from "react-icons/fc";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import auth from "../../firebase.init";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -10,19 +10,26 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
   const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
+
   const handlePass = (e) => {
     setPassword(e.target.value);
   };
+
   if (user) {
-    navigate("/shop");
+    navigate(from, { replace: true });
   }
+
   const handleLogin = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(email, password);
   };
+
   return (
     <div className="form-container">
       <div>
